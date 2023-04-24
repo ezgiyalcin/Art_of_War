@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500;600;700&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Fira Sans', sans-serif;
+scroll-behavior: smooth;
+
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 10px;
+    position: fixed;
+    width: 100%;
+    top: 1;
+    background-color: rgba(0, 0, 0, 0.486);
+
+}
+
+
+header .logo{
+    width: 200px;
+}
+
+header nav{
+    display: flex;
+    gap: 20px;
+    
+}
+header nav a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 10px black;
+    transition: all 0.5s;
+    color: white;
+}
+header .burger{
+    max-width: 40px;
+    display: none;
+    transition: 0.2s;
+}
+header .burger:hover{
+    cursor: pointer;
+    max-width: 50px;
+    transition: 0.2s;
+}
+header nav a:hover{
+    color: red;
+    text-shadow: crimson;
+    transition: all 0.5s;
+}
+section{
+    min-height: 100vh;
+
+}
+#Welcomesec{
+    background: url('/Images/main.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#Welcomesec div{
+    text-align: center;
+    padding-top: 100px;
+    margin: auto;
+}
+#Welcomesec div h1{
+    font-size: 70px;
+    color: rgb(215, 215, 215);
+}
+
+#Welcomesec div p{
+    padding-top: 30px;
+    color: rgb(215, 215, 215);
+    
+}
+
+.Sec2{
+    
+    display: flex ;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding: 0 50px;
+    padding-bottom: 20px;
+    top: -1;
+   
+    
+}
+
+.leftside{
+    color:white;
+    max-height: 600px;
+       
+}
+.leftside h3{
+    font-size: 10px;
+}
+.leftside h1{
+    font-size: 30px;
+    border-bottom: 1px solid white;
+    margin-bottom: 10px;
+}
+
+.leftside p{
+    font-size: 8px;
+    margin-bottom: 10px;
+}
+.rightside{
+    max-width: 600px;
+    max-height: 600px;
+    min-width: 200px;
+    min-height: 200px;
+}
+.rightside img{
+    width: 100%;
+    height: 100%;
+}
+
+.sec3{
+    background-image:
+    radial-gradient(
+        circle, 
+        rgba(0, 0, 0, 0) 0%,
+         rgba(0, 0, 0, 0.9) 50%
+         ),
+          url(/Images/sec-2.jpg);
+    background-position: center;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+.sec3head{
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+    
+}
+
+.boxes{
+    display: flex;
+    
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+    margin: auto;
+    
+
+}
+.sec3box{
+    width: 200px;
+    height: 100px;
+    border: 1px solid rgba(255, 255, 255, 0.112);
+    padding: 5px;
+    transition: 0.2s;
+    
+}
+.sec3box:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.635);
+    transition: 0.2s;
+}
+.sec3box p{
+    font-size: 10px;
+    color: rgb(190, 190, 190);
+}
+
+.sec3box h2{
+color: rgb(171, 0, 0);
+letter-spacing: 2px;
+}
+.sec3box:last-child{
+    width: 350px;
+}
+
+.Opinions{
+    background-color: rgb(0, 0, 0);
+    background-image: url(/Images/sec-3.png);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 0 10%;
+    padding-bottom: 20px;
+
+}
+
+
+.opleft{
+    color: white;
+    max-width: 450px;
+    padding: 20px;
+}
+
+.opleft h1{
+    font-size: 40px;
+   
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.opleft p{
+    font-size: 10px;
+    
+    margin-bottom: 20px;
+
+}
+
+.opleft button{
+    background-color: red;
+    height: 30px;
+    width: 150px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-weight: 600;
+    border-radius: 20px;
+}
+.opleft button:hover{
+    background-color: rgb(156, 0, 0);
+    transition: 0.2s;
+}
+
+.opright{
+    min-width: 600px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    
+    
+    
+}
+.opbox{
+    padding: 20px;
+    margin: 10px;
+    background-color: rgba(67, 67, 67, 0.575);
+    border-radius: 20px;
+    max-width: 300px;
+    
+}
+.opbox2{
+    align-self: flex-start;
+}
+.opbox h3{
+    color: red;
+}
+.opbox h6{
+    color: rgb(110, 110, 110);;
+}
+.opbox p{
+    font-size: 10px;
+    color: rgb(255, 255, 255);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.opboxust{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 700px){
+
+.Sec2{
+    flex-direction: column;
+}
+
+.rightside{
+    order: -1;
+}
+.Opinions{
+    flex-direction: column;
+}
+.opright{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+.opbox2{
+    align-self: center;
+}
+header nav a{
+    display: none;
+}
+
+header .burger{
+    display: block;
+    margin-right: -80px;
+}
+}
+
+
+
